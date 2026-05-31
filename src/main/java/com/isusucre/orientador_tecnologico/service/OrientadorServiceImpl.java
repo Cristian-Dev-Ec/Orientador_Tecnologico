@@ -1,4 +1,4 @@
-package main.java.com.isusucre.orientador_tecnologico.service;
+package com.isusucre.orientador_tecnologico.service;
 
 import com.isusucre.orientador_tecnologico.model.AreaTecnologica;
 
