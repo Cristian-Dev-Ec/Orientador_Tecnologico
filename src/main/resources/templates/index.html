@@ -13,7 +13,7 @@
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
             crossorigin="anonymous"
         />
-        <!-- Bootstrap Icons -->
+        <!-- Bootstrap Icons --> 
          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     </head>
 
@@ -22,90 +22,80 @@
             <!-- place navbar here -->
         </header>
         <main>
-            <div class="container mt-5">
+            <div class="container mt-3">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 text-center mb-4">
+                    <div class="col-md-8 text-center mb-2">
                         <h1 class="display-6 fw-bold text-primary">🎯 Orientador Tecnológico</h1>
-                        <p class="fs-4">Selecciona el área tecnológica de tu interés para conocer su ruta de aprendizaje y herramientas clave.</p>
                     </div>
                 </div>
+                <div class="row justify-content-center mb-2">
+                    <div class="col-md-12 col-lg-8">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-dark text-white text-center fw-bold py-2">
+                                📋 MENÚ DE OPCIONES DISPONIBLES
+                            </div>
+                            <div class="list-group list-group-flush">
+                                <div class="list-group-item p-2">
+                                    <h5 class="mb-1 fw-bold text-dark">🌐 1. Desarrollo Web</h5>
+                                    <p class="mb-1 text-muted small">Rutas de aprendizaje para la creación de sitios y aplicaciones web modernas.</p>
+                                    <small class="text-primary fw-semibold">Sub-opciones: frontend | backend | fullstack</small>
+                                </div>
+                                
+                                <div class="list-group-item p-2">
+                                    <h5 class="mb-1 fw-bold text-dark">📊 2. Ciencia de Datos</h5>
+                                    <p class="mb-1 text-muted small">Análisis de grandes volúmenes de información, bases de datos complejas y modelos de Machine Learning.</p>
+                                </div>
 
-                <div class="row justify-content-center">
-                    <div class="col">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-6 mb-4">
-                                    <div class="card">
-                                        <div class="card-header bg-dark text-white">
-                                            <h4 class="mb-0 text-center">🌐 <strong>Desarrollo Web</strong></h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text text-justify">Para conocer la ruta de aprendizaje en Desarrollo Web, selecciona tu área de interés.</p>
-                                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                                                <a th:href="@{/orientar(opcion=1, plataforma='frontend')}" class="btn btn-success rounded-pill py-2">
-                                                    <i class="bi bi-palette-fill pe-2"></i> Frontend
-                                                </a>
-                                                <a th:href="@{/orientar(opcion=1, plataforma='backend')}" class="btn btn-dark rounded-pill py-2">
-                                                    <i class="bi bi-gear-fill pe-2"></i> Backend
-                                                </a>
-                                                <a th:href="@{/orientar(opcion=1, plataforma='fullstack')}" class="btn btn-primary rounded-pill py-2">
-                                                    <i class="bi bi-laptop-fill pe-2"></i> Full Stack
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="list-group-item p-2">
+                                    <h5 class="mb-1 fw-bold text-dark">📱 3. Desarrollo Móvil</h5>
+                                    <p class="mb-1 text-muted small">Creación de aplicaciones nativas e híbridas para ecosistemas smartphones.</p>
+                                    <small class="text-primary fw-semibold">Sub-opciones: android | ios</small>
                                 </div>
-                                <div class="col-md-6 col-lg-6 mb-4">
-                                    <div class="card">
-                                        <div class="card-header bg-dark text-white">
-                                            <h4 class="mb-0 text-center">📊 <strong>Ciencia de Datos</strong></h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text text-justify">Para conocer la ruta de aprendizaje en Ciencia de Datos, haz clic en el siguiente botón.</p>
-                                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                                                <a th:href="@{/orientar(opcion=2)}" class="btn btn-primary rounded-pill py-2">Ver Ruta</a>
-                                            </div>
-                                        </div>
-                                    </div>
+
+                                <div class="list-group-item p-2">
+                                    <h5 class="mb-1 fw-bold text-dark">⚙️ 4. Backend</h5>
+                                    <p class="mb-1 text-muted small">Arquitectura lógica, servidores, API REST, datos y seguridad del lado del servidor.</p>
+                                </div>
+
+                                <div class="list-group-item p-2">
+                                    <h5 class="mb-1 fw-bold text-dark">❌ 5. Salir del sistema</h5>
+                                    <p class="mb-1 text-muted small">Finaliza tu experiencia con el Orientador Tecnológico.</p>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6 col-lg-6 mb-4">
-                                    <div class="card">
-                                        <div class="card-header bg-dark text-white">
-                                            <h4 class="mb-0 text-center">📱 <strong>Desarrollo Móvil</strong></h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text text-justify">Para conocer la ruta de aprendizaje en Desarrollo Móvil, selecciona tu plataforma de interés.</p>
-                                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                                                <a th:href="@{/orientar(opcion=3, plataforma='android')}" class="btn btn-success rounded-pill py-2">
-                                                    <i class="bi bi-android2"></i> Android
-                                                </a>
-                                                <a th:href="@{/orientar(opcion=3, plataforma='ios')}" class="btn btn-dark rounded-pill">
-                                                    <i class="bi bi-apple"></i> iOS
-                                                </a>
-                                            </div>
-                                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-2 pb-3">
+                    <div class="col-md-12 col-lg-8">
+                        <div class="card border-0 shadow">
+                            <div class="card-body pb-3">
+                                <form th:action="@{/orientar}" method="get">
+                                    <div class="mb-3">
+                                        <label for="opcionInput" class="form-label fw-bold text-secondary">Digite el número del área tecnológica para conocer su ruta de aprendizaje y herramientas clave.</p></label>
+                                        <input type="text" 
+                                               name="opcion" 
+                                               id="opcionInput" 
+                                               class="form-control form-control-md text-center fw-bold" 
+                                               placeholder="Ingrese la opción (1-5)" 
+                                               min="1" 
+                                               max="5" 
+                                               required
+                                               oninput="evaluarOpcionPrincipal()">
                                     </div>
-                                </div>
-                                <div class="col-md-6 col-lg-6 mb-4">
-                                    <div class="card">
-                                        <div class="card-header bg-dark text-white">
-                                            <h4 class="mb-0 text-center">⚙️ <strong>Backend</strong></h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text text-justify">Para conocer la ruta de aprendizaje en Backend, haz clic en el siguiente botón.</p>
-                                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                                                <a th:href="@{/orientar(opcion=4)}" class="btn btn-primary rounded-pill py-2">Ver Ruta</a>
-                                            </div>
-                                        </div>
+                                    <div id="seccionSubOpcion" class="mb-3 d-none">
+                                        <label id="labelSubOpcion" for="plataformaInput" class="form-label fw-bold text-primary">⌨️ Escriba la sub-opción:</label>
+                                        <input type="text" 
+                                               name="plataforma" 
+                                               id="plataformaInput" 
+                                               class="form-control text-center fw-bold text-lowercase" 
+                                               placeholder="Ingrese la sub-opción">
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row pb-md-4">
-                                <div class="col text-center mt-4">
-                                    <a th:href="@{/orientar(opcion=5)}" class="btn btn-danger rounded-pill px-5 fs-4"><i class="bi bi-box-arrow-left pe-3 fw-bold"></i> Salir</a>
-                                </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary btn-md rounded-pill fw-bold text-center">
+                                            <i class="bi bi-keyboard-fill pe-2"></i> Procesar Opción
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -113,8 +103,30 @@
             </div>
         </main>
         <footer>
-            <!-- place footer here -->
+            <!-- place footer here --> 
         </footer>
+        <script>
+            function evaluarOpcionPrincipal() {
+                const opcion = document.getElementById('opcionInput').value;
+                const seccionSubOpcion = document.getElementById('seccionSubOpcion');
+                const labelSubOpcion = document.getElementById('labelSubOpcion');
+                const plataformaInput = document.getElementById('plataformaInput');
+
+                if (opcion === '1') {
+                    seccionSubOpcion.classList.remove('d-none');
+                    labelSubOpcion.innerHTML = "⌨️ Digite el área: <strong>frontend</strong>, <strong>backend</strong> o <strong>fullstack</strong>";
+                    plataformaInput.required = true;
+                } else if (opcion === '3') {
+                    seccionSubOpcion.classList.remove('d-none');
+                    labelSubOpcion.innerHTML = "⌨️ Digite el sistema operativo: <strong>android</strong> o <strong>ios</strong>";
+                    plataformaInput.required = true;
+                } else {
+                    seccionSubOpcion.classList.add('d-none');
+                    plataformaInput.required = false;
+                    plataformaInput.value = "";
+                }
+            }
+        </script>
         <!-- Bootstrap JavaScript Bundle (includes Popper) -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
