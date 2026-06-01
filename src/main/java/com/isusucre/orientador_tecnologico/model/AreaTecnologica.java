@@ -10,4 +10,5 @@ public class AreaTecnologica {
     private String lenguajesRecomendados;
     private String rutaAprendizaje;
     private String herramientas;
+    private String pdfNombre;
 }

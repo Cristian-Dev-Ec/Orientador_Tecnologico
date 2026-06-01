@@ -13,6 +13,8 @@
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
             crossorigin="anonymous"
         />
+        <!-- Bootstrap Icons -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     </head>
 
     <body>
@@ -20,14 +22,93 @@
             <!-- place navbar here -->
         </header>
         <main>
-            <div class="container">
-                <h1 class="mt-5">Bienvenido al Orientador Tecnológico</h1>
-                <p class="lead">Selecciona un área tecnológica para recibir orientación.</p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action">Desarrollo Web</a>
-                    <a href="#" class="list-group-item list-group-item-action">Ciberseguridad</a>
-                    <a href="#" class="list-group-item list-group-item-action">Desarrollo Móvil</a>
-                    <a href="#" class="list-group-item list-group-item-action">Backend</a>
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center mb-4">
+                        <h1 class="display-6 fw-bold text-primary">🎯 Orientador Tecnológico</h1>
+                        <p class="fs-4">Selecciona el área tecnológica de tu interés para conocer su ruta de aprendizaje y herramientas clave.</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 mb-4">
+                                    <div class="card">
+                                        <div class="card-header bg-dark text-white">
+                                            <h4 class="mb-0 text-center">🌐 <strong>Desarrollo Web</strong></h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text text-justify">Para conocer la ruta de aprendizaje en Desarrollo Web, selecciona tu área de interés.</p>
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                                <a th:href="@{/orientar(opcion=1, plataforma='frontend')}" class="btn btn-success rounded-pill py-2">
+                                                    <i class="bi bi-palette-fill pe-2"></i> Frontend
+                                                </a>
+                                                <a th:href="@{/orientar(opcion=1, plataforma='backend')}" class="btn btn-dark rounded-pill py-2">
+                                                    <i class="bi bi-gear-fill pe-2"></i> Backend
+                                                </a>
+                                                <a th:href="@{/orientar(opcion=1, plataforma='fullstack')}" class="btn btn-primary rounded-pill py-2">
+                                                    <i class="bi bi-laptop-fill pe-2"></i> Full Stack
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 mb-4">
+                                    <div class="card">
+                                        <div class="card-header bg-dark text-white">
+                                            <h4 class="mb-0 text-center">📊 <strong>Ciencia de Datos</strong></h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text text-justify">Para conocer la ruta de aprendizaje en Ciencia de Datos, haz clic en el siguiente botón.</p>
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                                <a th:href="@{/orientar(opcion=2)}" class="btn btn-primary rounded-pill py-2">Ver Ruta</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 mb-4">
+                                    <div class="card">
+                                        <div class="card-header bg-dark text-white">
+                                            <h4 class="mb-0 text-center">📱 <strong>Desarrollo Móvil</strong></h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text text-justify">Para conocer la ruta de aprendizaje en Desarrollo Móvil, selecciona tu plataforma de interés.</p>
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                                <a th:href="@{/orientar(opcion=3, plataforma='android')}" class="btn btn-success rounded-pill py-2">
+                                                    <i class="bi bi-android2"></i> Android
+                                                </a>
+                                                <a th:href="@{/orientar(opcion=3, plataforma='ios')}" class="btn btn-dark rounded-pill">
+                                                    <i class="bi bi-apple"></i> iOS
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 mb-4">
+                                    <div class="card">
+                                        <div class="card-header bg-dark text-white">
+                                            <h4 class="mb-0 text-center">⚙️ <strong>Backend</strong></h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text text-justify">Para conocer la ruta de aprendizaje en Backend, haz clic en el siguiente botón.</p>
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                                <a th:href="@{/orientar(opcion=4)}" class="btn btn-primary rounded-pill py-2">Ver Ruta</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pb-md-4">
+                                <div class="col text-center mt-4">
+                                    <a th:href="@{/orientar(opcion=5)}" class="btn btn-danger rounded-pill px-5 fs-4"><i class="bi bi-box-arrow-left pe-3 fw-bold"></i> Salir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
