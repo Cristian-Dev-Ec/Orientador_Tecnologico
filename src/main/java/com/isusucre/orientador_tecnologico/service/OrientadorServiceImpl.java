@@ -38,7 +38,7 @@ public class OrientadorServiceImpl implements OrientadorService {
                 return new AreaTecnologica(
                     "Ciencia de Datos",
                     "Python: lenguaje de programación, R: lenguaje de programación, SQL: lenguaje de consulta para bases de datos, TensorFlow: librería para aprendizaje automático",
-                    "1. Aprende Python o R\n2. Domina SQL para manejo de datos\n3. Explora bibliotecas como TensorFlow o Scikit-learn\n4. Trabaja en proyectos de análisis de datos",
+                    "1. Aprende Python o R 2. Domina SQL para manejo de datos 3. Explora bibliotecas como TensorFlow o Scikit-learn 4. Trabaja en proyectos de análisis de datos",
                     "Jupyter Notebook, Anaconda, Tableau",
                     "dataScience.pdf"
                 );
@@ -46,7 +46,7 @@ public class OrientadorServiceImpl implements OrientadorService {
                 if("ios".equalsIgnoreCase(plataforma)){
                     return new AreaTecnologica(
                         "Desarrollo Movil (iOS)",
-                        "Swift, Objective-C, SwiftUI",
+                        "Swift: lenguaje de programación, Objective-C: lenguaje de programación, SwiftUI: framework para interfaces de usuario",
                         "Ruta de aprendizaje en Desarrollo Móvil iOS",
                         "Xcode, Swift Playgrounds",
                         "desarrolloMovilIOS.pdf"
@@ -54,7 +54,7 @@ public class OrientadorServiceImpl implements OrientadorService {
                 } else {
                     return new AreaTecnologica(
                         "Desarrollo Movil (Android)",
-                        "Java, Kotlin, Swift, Flutter",
+                        "Java: lenguaje de programación, Kotlin: lenguaje de programación, Swift: lenguaje de programación, Flutter: framework para interfaces de usuario",
                         "Ruta de aprendizaje en Desarrollo Móvil Android",
                         "Android Studio, Xcode, Flutter SDK",
                         "desarrolloMovilAndroid.pdf"
@@ -63,7 +63,7 @@ public class OrientadorServiceImpl implements OrientadorService {
             case 4:
                 return new AreaTecnologica(
                     "Backend",
-                    "Java, Python, Node.js, SQL",
+                    "Java: lenguaje de programación, Python: lenguaje de programación, Node.js: entorno de ejecución, SQL: lenguaje de consulta para bases de datos",
                     "1. Aprende un lenguaje de backend como Java, Python o Node.js\n2. Domina bases de datos SQL\n3. Explora frameworks como Spring Boot o Express.js\n4. Construye APIs y servicios backend",
                     "IntelliJ IDEA, PyCharm, Postman",
                     "backend.pdf"
