@@ -12,7 +12,7 @@ public class OrientadorServiceImpl implements OrientadorService {
                 if("frontend".equalsIgnoreCase(plataforma)){
                     return new AreaTecnologica(
                         "Desarrollo Web Frontend",
-                        "HTML, CSS, JavaScript, React, Angular",
+                        "HTML: estructura de una página web, CSS: estilo y diseño, JavaScript: interactividad, React: librería para interfaces de usuario, Angular: framework para aplicaciones web",
                         "Ruta de aprendizaje en Desarrollo Web Frontend",
                         "Visual Studio Code, GitHub, Chrome DevTools",
                         "desarrolloWeb(Frontend).pdf"
@@ -20,7 +20,7 @@ public class OrientadorServiceImpl implements OrientadorService {
                 } else if ("backend".equalsIgnoreCase(plataforma)) {
                     return new AreaTecnologica(
                         "Desarrollo Web Backend",
-                        "Java, Python, Node.js, SQL",
+                        "Java: lenguaje de programación, Python: lenguaje de programación, Node.js: entorno de ejecución, SQL: lenguaje de consulta para bases de datos",
                         "Ruta de aprendizaje en Desarrollo Web Backend",
                         "IntelliJ IDEA, PyCharm, Postman",
                         "desarrolloWeb(Backend).pdf"
@@ -28,7 +28,7 @@ public class OrientadorServiceImpl implements OrientadorService {
                 } else {
                     return new AreaTecnologica(
                         "Desarrollo Web Full Stack",
-                        "HTML, CSS, JavaScript, React, Angular, Java, Python, Node.js, SQL",
+                        "HTML: estructura de una página web, CSS: estilo y diseño, JavaScript: interactividad, React: librería para interfaces de usuario, Angular: framework para aplicaciones web, Java: lenguaje de programación, Python: lenguaje de programación, Node.js: entorno de ejecución, SQL: lenguaje de consulta para bases de datos",
                         "Ruta de aprendizaje en Desarrollo Web Full Stack",
                         "Visual Studio Code, IntelliJ IDEA, Postman",
                         "desarrolloWeb(FullStack).pdf"
@@ -37,7 +37,7 @@ public class OrientadorServiceImpl implements OrientadorService {
             case 2:
                 return new AreaTecnologica(
                     "Ciencia de Datos",
-                    "Python, R, SQL, TensorFlow",
+                    "Python: lenguaje de programación, R: lenguaje de programación, SQL: lenguaje de consulta para bases de datos, TensorFlow: librería para aprendizaje automático",
                     "1. Aprende Python o R\n2. Domina SQL para manejo de datos\n3. Explora bibliotecas como TensorFlow o Scikit-learn\n4. Trabaja en proyectos de análisis de datos",
                     "Jupyter Notebook, Anaconda, Tableau",
                     "dataScience.pdf"
